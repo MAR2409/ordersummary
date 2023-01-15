@@ -19,9 +19,11 @@
 body {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     background-image: url(..//ordersummary/pattern-background-mobile.svg);
     background-repeat:no-repeat ;
     background-size: 100rem;
+    align-items: center;
 }
 
 .container {
@@ -140,6 +142,27 @@ button a{
    color: var(--color5);
 }
 
+footer {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: .75rem;
+}
+
+footer a {
+    font-size: .75rem;
+    color: var(--color2);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color:hsl(245, 81%, 68%) ;    
+}
+
 @media (min-width:1440px) {
     body {
         display: flex;
@@ -189,5 +212,13 @@ button a{
 
     .summary-button a {
         font-size: .95rem;
+    }
+
+    footer p {
+        font-size: .85rem;
+    }
+    
+    footer a {
+        font-size: .85rem;
     }
 }
